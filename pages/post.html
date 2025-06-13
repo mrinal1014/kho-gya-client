@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Submit Post | Kho Gaya Board</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Submit Lost/Found Item</h1>
+    <form id="postForm" enctype="multipart/form-data">
+      <select id="type" required>
+        <option value="">-- Select Type --</option>
+        <option value="lost">Lost</option>
+        <option value="found">Found</option>
+      </select>
+
+      <input type="text" id="place" placeholder="Place (e.g., AU1, Library)" required />
+
+      <textarea id="message" placeholder="Describe the item..." rows="4" required></textarea>
+
+      <input type="file" id="image" accept="image/*" required />
+
+      <button type="submit">Submit Post</button>
+    </form>
+    <p><a href="index.html">← Back to Posts</a></p>
+  </div>
+
+  <script src="../js/post.js"></script>
+  <script src="../js/utils.js"></script>
+</body>
+</html>

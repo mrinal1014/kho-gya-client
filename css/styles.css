@@ -1,0 +1,165 @@
+/* ===== Kho Gaya Board - Global Styles ===== */
+
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --primary: #2a7cff;
+  --accent: #1b1f3a;
+  --light: #f5f8ff;
+  --danger: #ff4d4d;
+  --border: #dbe1f1;
+  --radius: 12px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  --font: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+body {
+  background: var(--light);
+  color: var(--accent);
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+button, .btn {
+  padding: 10px 20px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+button:hover, .btn:hover {
+  background: #1a5fe4;
+}
+
+.btn-danger {
+  background: var(--danger);
+}
+.btn-danger:hover {
+  background: #d93636;
+}
+
+/* Forms */
+form {
+  background: white;
+  padding: 25px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 30px;
+}
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+}
+form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Post Cards */
+.post-card {
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.post-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+}
+.post-meta {
+  font-size: 0.9rem;
+  color: gray;
+}
+.post-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Navigation */
+nav {
+  background: white;
+  padding: 15px 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+  margin-left: 20px;
+}
+nav a:hover {
+  color: #144ecf;
+}
+
+/* Messages */
+.message {
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  border-radius: var(--radius);
+  background: #e8f0ff;
+  border-left: 5px solid var(--primary);
+}
+.message.error {
+  background: #ffeaea;
+  border-left-color: var(--danger);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .post-card {
+    padding: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
