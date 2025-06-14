@@ -1,4 +1,5 @@
-const baseURL = 'https://your-render-backend.com/api'; // 🔁 Replace with your backend URL
+const baseURL = 'https://kho-gaya-board.onrender.com/api'; // Change to your backend URL
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("postForm");

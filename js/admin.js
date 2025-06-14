@@ -1,4 +1,5 @@
-const baseURL = 'https://your-backend-url.com/api';
+const baseURL = 'https://kho-gaya-board.onrender.com/api'; // Change to your backend URL
+
 
 document.addEventListener("DOMContentLoaded", async () => {
   const user = getUser();

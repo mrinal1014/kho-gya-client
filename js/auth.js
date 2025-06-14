@@ -1,4 +1,4 @@
-const baseURL = 'https://your-render-backend-url/api'; // Change to your backend URL
+const baseURL = 'https://kho-gaya-board.onrender.com/api'; // Change to your backend URL
 
 document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.getElementById("loginForm");
