@@ -1,6 +1,6 @@
 {
   "dependencies": {
-<<<<<<< HEAD
+
     "axios": "^1.9.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -17,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   }
-=======
+
   "axios": "^1.9.0",
   "react": "^19.1.0",
   "react-dom": "^19.1.0",
@@ -29,5 +29,4 @@
   "postcss": "^8.5.5"
 }
 
->>>>>>> c1ca6e4 (PAGES TO PUBLIC)
 }
